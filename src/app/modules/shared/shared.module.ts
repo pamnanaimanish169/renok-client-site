@@ -2,21 +2,22 @@ import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { RouterModule } from "@angular/router";
-import { HomeComponent } from "./home.component";
+import { HeaderComponent } from "./header/header.component";
+import { LeftMenuComponent } from "./leftmenu/leftmenu.component";
 
-const homeRoutes = [
-    {   path : '', component : HomeComponent    }
+const sharedRoutes = [
 ];
 
 @NgModule({
     declarations : [
-        HomeComponent
+        LeftMenuComponent,
+        HeaderComponent
     ],
     imports : [
-        RouterModule.forChild(homeRoutes),
+        // RouterModule.forChild(sharedRoutes),
         CommonModule
     ],
     providers : [],
 })
 
-export class HomeModule {   }
+export class SharedModule {   }

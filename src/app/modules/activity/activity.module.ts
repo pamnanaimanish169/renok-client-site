@@ -2,21 +2,21 @@ import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { BrowserModule } from "@angular/platform-browser";
 import { RouterModule } from "@angular/router";
-import { HomeComponent } from "./home.component";
+import { ActivityComponent } from "./activity.component";
 
-const homeRoutes = [
-    {   path : '', component : HomeComponent    }
+const activityRoutes = [
+    {   path : '', component : ActivityComponent    }
 ];
 
 @NgModule({
     declarations : [
-        HomeComponent
+        ActivityComponent
     ],
     imports : [
-        RouterModule.forChild(homeRoutes),
+        RouterModule.forChild(activityRoutes),
         CommonModule
     ],
     providers : [],
 })
 
-export class HomeModule {   }
+export class ActivityModule {   }

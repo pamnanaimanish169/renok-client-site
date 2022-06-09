@@ -10,9 +10,9 @@
                 </div>
                 <div class="user_head_profile">
                      <div class="user_headname">
-                        <span id="shows"><span>Hi</span>&nbsp;&nbsp;Scot deo<span class="name_short"><div>S</div></span></span>
+                        <span id="shows" (click)="clickShows($event);"><span>Hi</span>&nbsp;&nbsp;Scot deo<span class="name_short"><div>S</div></span></span>
                        
-                            <div class="dropdown_Ulist" style="display: none;">
+                            <div class="dropdown_Ulist" [attr.style]="toggle ? 'display: block;' : 'display : none;'">
                                 <div class="wel_note_dropdown">Welcome!</div>
                                 <a href="#"><i class="fas fa-user"></i><span>My profile</span> </a>
                                 <a href="#"><i class="fas fa-cog"></i><span>Settings</span> </a>
